@@ -1,0 +1,469 @@
+@import 'variables', 'utilities';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+/* NAVBAR DESKTOP */
+.main-nav {
+    background: transparent;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 50;
+    
+    .nav-container {
+        max-width: 1540px;
+        margin: auto;
+    }
+    .navLinks a {
+        color: white;
+        font-size: large;
+    }
+    .searchIcon {
+        height: 1.5rem;
+        scale: 100%;
+        transition: all 1s ease;
+    }
+    .searchIcon:hover {
+        scale: 120%;
+    }
+
+    .mobile-menu {
+        width: 100%;
+    }
+}
+
+#hero {
+    min-height: 80vh;
+    width: 100%;
+    background: url('./IMG/jellyfishmain.png') no-repeat center center/cover;
+    color: $background-offwhite;
+    display: flex;
+    
+    .hero-title {
+        font-weight: 600;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        @media (max-width: 768px) { 
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .hero-info {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        @media (max-width: 768px) { 
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    button {
+        @media (max-width: 768px) { 
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+/* Who are Venn / Stats */
+
+#stats {
+    background: url('./IMG/curve_background.png') no-repeat center center/cover ;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-bottom: 5rem;
+
+    @media (max-width: 768px) { 
+        padding-bottom: 8rem;
+    }
+
+    .grid-1-title {
+        font-weight: 600;
+        color: white;
+        font-size: 3rem;
+
+        @media (max-width: 768px) { 
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .grid-1-info {
+        font-size: 24px;
+        color: white;
+        padding-bottom: 2rem;
+
+        @media (max-width: 768px) { 
+            font-size: 20px;
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+    .grid-1 button {
+        @media (max-width: 768px) { 
+            display: flex;
+            margin: auto;
+        }
+    }
+
+    .stats-col {
+        display: grid;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-weight: bold;
+        color: white;
+        align-content: center;
+
+        .stats {
+            display: grid;
+            grid-gap: 3rem;
+
+            .stats-grid {
+                display: grid;
+                justify-items: center;
+            }
+        }
+    }
+}
+
+/* INDUSTRY SECTORS GRID */
+
+#industry-sectors {
+
+    h2 {
+        font-weight: 600;
+        font-size: 44px;
+    }
+
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(105%);
+        }
+
+        .grid-info {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: $background-dark;
+
+            .category {
+                font-size: 28px;
+            }
+            .category-link-container {
+                display: flex;
+                align-items: center;
+            }
+            .category-link {
+                font-size: 20px;
+                color: $background-green;
+                padding-right: 1rem;
+                transition: all 0.5s ease-in-out;
+            }
+            .category-link:hover {
+                cursor: pointer;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .highlighted-link {
+        font-weight: 800;
+        text-decoration: underline;
+        color: $background-lightgreen
+    }
+    .highlighted-link a {
+        color: inherit;
+    }
+    .list-row {
+        display: flex;
+    }
+    .title-content {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        .line-height {
+            padding-top: 1rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+/* LOGOS CAROUSEL */
+
+/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport (slick list in slick carousel). inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK- position absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
+
+https://kenwheeler.github.io/slick/#demos
+
+*/
+
+#logos {
+    margin-top: 4rem;
+    width: 100%;
+    background: url('./IMG/green-background.png') no-repeat center center/cover;
+    padding: 7rem 0;
+
+    .logos-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* LATEST JOBS */
+
+#latest-jobs {
+    min-height: 100vh;
+    width: 100%;
+    background: url('./IMG/jellyfish.png') no-repeat center center/cover;
+    overflow: hidden;
+    
+    .job-title {
+        justify-self: flex-start;
+        font-size: 44px;
+        font-weight: 600;
+
+        @media (max-width: 768px) { 
+            text-align: center;
+        }
+    }
+
+    .job-button {
+        @media (max-width: 768px) { 
+            display: flex;
+            margin: auto;
+        }
+    }
+
+    .job-listing {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: solid 2px white;
+        
+        .listing-title {
+            color: white;
+            font-size: 20px;
+            padding: 1rem;
+            background-color: $background-green;
+        }
+
+        .listing-title p {
+            max-width: 80%;
+        }
+
+        .info {
+            display: flex;
+            padding: 1rem;
+            color: $text-grey;
+        }
+        .info a {
+            color: $background-lightgreen;
+        }
+        .job-info {
+            max-width: 400px;
+            padding: 1rem;
+            color: $text-grey;
+        }
+    }
+        /* This css element overrides the inline styles by slick carousel plugin */
+        .jobs-responsive .slick-list {
+            overflow: visible !important;
+        }
+
+        .slick-arrow {
+            margin-top: 20px;
+            color: blue;
+        }
+
+        .slick-arrow.prevJob {
+            right: 50px;
+        }
+
+        .nextJob {
+            background: url('./IMG/angle-right-solid.svg') no-repeat center center/contain;
+            height: 30px;
+            width: 30px;
+            outline: none;
+            border: none;
+        }
+
+        .prevJob {
+            background: url('./IMG/angle-right-solid.svg') no-repeat center center/contain;
+            height: 30px;
+            width: 30px;
+            transform: rotate(-180deg);
+            outline: none;
+            border: none;
+        }
+}
+
+    
+
+
+
+/* CAREERS SECTION */
+
+#careers {
+    height: auto;
+    width: 100%;
+    /* ARTEFACT ON TOP OF IMAGE WHEN SHRUNK IN DESKTOP? */
+    background: url('./IMG/desk.png') no-repeat center center/cover;
+
+    .row {
+        display: flex;
+        padding-top: 5rem;
+    }
+
+    .job-title {
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .careers-button {
+        @media (max-width: 768px) { 
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+/* LATEST NEWS GRID : https://codepen.io/paulobrien/pen/MWKmNOE*/
+#latest-news {
+    background-color: $background-offwhite;
+
+    h2 {
+        font-weight: 600;
+        font-size: 44px;
+    }
+
+    .columns {
+        margin: auto;
+        columns: 3 280px;
+        column-gap: 2rem;
+
+        .box {
+            margin: 0 0 1rem;
+            display: inline-block; /* stops block being split across columns */
+            width: 100%;
+            break-inside: avoid;
+          }
+      }
+
+    .grid-container {
+        background: white;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(102%);
+    }
+
+    .news-green-background {
+        background: url('./IMG/greenbackground2.png') no-repeat center center/cover;
+    }
+
+    .job-title {
+        @media (max-width: 768px) { 
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+
+    .job-button {
+        @media (max-width: 768px) { 
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+/* FOOTER */
+
+#footer {
+    
+    background-color: $background-green;
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.571);
+    }
+    p {
+        color: rgba(255, 255, 255, 0.571);
+    }
+    input {
+        padding: 1rem;
+        background-color: $background-green;
+        border: 2px solid white;
+        color: white;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        font-weight: 600;
+        opacity: 1; /* Firefox */
+      }
+    button {
+        border: none;
+    }  
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    background-color: $background-dark-solid;
+    width: 100%;
+
+    .copyright-container {
+        color: rgba(255, 255, 255, 0.537);
+        font-size: small;
+        max-width: 1600px;
+        padding: 20px 10px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        @media (min-width: 768px) { 
+            padding: 1.5rem 4rem;
+        }
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.537);
+        @media (max-width: 768px) {
+            padding: 0px;
+        }
+    }
+
+    p {
+        @media (max-width: 768px) {
+            padding: 10px; 
+            display: flex;
+            margin: auto;
+        }
+    }
+}

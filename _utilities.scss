@@ -1,0 +1,102 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* MAIN CONTAINER - BOOTSTRAP MAX CONTAINER WAS TOO SMALL */
+.main-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px;
+
+    @media (min-width: 768px) { 
+        padding: 4rem;
+    }
+}
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px;
+    z-index: 60;
+    @media (max-width: 991px) { 
+        background: rgba(0, 0, 0, 0.817);
+    }
+
+    @media (min-width: 768px) { 
+        padding: 1rem 4rem;
+        
+    }
+    .navbar-toggler-icon {
+        z-index: 30;
+    }
+    .navbar a {
+        color: white;
+    }
+    .navbar a:hover{
+        text-decoration: underline;
+    }
+    .navbar-inner {
+        position: relative;
+        
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* main buttons */
+
+.btn {
+    border-radius: 0;
+    padding: 1rem 5rem 1rem 5rem;
+    font-weight: bold;
+    font-size: 24px;
+
+    &-main {
+        @extend .btn;
+        color: $background-lightgreen;
+        border: 3px solid $background-lightgreen;
+        padding: 1rem 4rem 1rem 4rem;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    &-white {
+        @extend .btn;
+        color: $background-white;
+        border: 3px solid $background-white;
+        padding: 1rem 4rem 1rem 4rem;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.btn-main:hover {
+color: $background-green;
+}
+
+.btn-white:hover {
+    color: $background-lightgreen;
+}

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--SLICK CSS-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/index.css">
+    <title>Venn Bootstrap</title>
+</head>
+<body>
+    
+    
+    
+    <!-- <nav class="main-nav mx-auto ">
+        <div class="nav-container d-flex flex-row p-5 justify-content-between align-items-center">
+            
+            <div class="p-2 logo">
+                <a href="#">
+                    <img class="d-block d-md-none" src="/IMG/shortlogo.svg" alt="">
+                    <img class="d-none d-md-block" src="/IMG/mainlogo.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="p-2 d-none d-lg-flex flex-row navLinks">
+                <a href="#">
+                    <li class="px-3">About Us</li>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Clients</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Candidates</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Sectors</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <li class="px-3">News</li>
+                </a>
+                <a href="#">
+                    <li class="px-3">Contact</li>
+                </a>
+            </div>
+
+            <div class="p-2 position-absolute top-100 start-0 bg-white d-block d-lg-hidden mobile-menu">
+                <a href="#">
+                    <li class="px-3">About Us</li>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Clients</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Candidates</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d-flex flex-row align-items-center px-3">
+                        <li class="">Sectors</li>
+                        <img class="pl-3" src="/IMG/dropdown_arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <li class="px-3">News</li>
+                </a>
+                <a href="#">
+                    <li class="px-3">Contact</li>
+                </a>
+            </div>
+
+            <div class="p-2">
+                <a class="" href="#">
+                    <img class="searchIcon" src="/IMG/searchIcon.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </nav> -->
+
+    <div class="nav-container">
+        <nav class="navbar navbar-fixed-top navbar-inner navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="/IMG/mainlogo.svg" alt="">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="pl-5 ml-5 navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="pr-4 nav-link" href="#">About us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pr-4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Clients
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-dark" href="#">Action</a>
+                            <a class="dropdown-item text-dark" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pr-4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Candidates
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-dark" href="#">Action</a>
+                            <a class="dropdown-item text-dark" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pr-4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sectors
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-dark" href="#">Action</a>
+                            <a class="dropdown-item text-dark" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="pr-4 nav-link" href="#">News<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="pr-4 nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button style="background: none; border: none;" type="submit">
+                        <img class="search-button" src="/IMG/searchIcon.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    
+
+    <!--HERO SECTION/NICE JELLYFISH-->
+    <section id="hero">
+        <div class="main-container">
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1 class="hero-title mt-5">All the answers under one roof</h1>
+                        <p class="hero-info">IT and Tech Recruitment for everything from start ups to large enterprises.</p>
+                        <div class="pt-4">
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--STATS SECTION-->
+    <section id="stats">
+            <div class="main-container h-auto">
+                <div class="flex-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-1">
+                                <h2 class="grid-1-title">Who are</h2>
+                                <h2 class="grid-1-title pb-4">Venn Digital</h2>
+                                <p class="grid-1-info">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet. 
+                                </p>
+                                <button class="btn btn-white mb-4 mb-lg-0">Read more</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 stats-col">
+                            <div class="grid-2">
+                                <div class="stats">
+                                    <div class="stats-grid justify-content-center">
+                                        <p class="display-4 font-weight-bold">1790</p>
+                                        <p>Live jobs</p>
+                                    </div>
+                                    <div class="stats-grid justify-content-center">
+                                        <p class="display-4 font-weight-bold">1790</p>
+                                        <p>Live jobs</p>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="stats-grid justify-content-center">
+                                        <p class="display-4 font-weight-bold">1790</p>
+                                        <p>Live jobs</p>
+                                    </div>
+                                    <div class="stats-grid justify-content-center">
+                                        <p class="display-4 font-weight-bold">1790</p>
+                                        <p>Live jobs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--INDUSTRY SECTORS GRID-->
+    <section id="industry-sectors">
+        <div class="main-container">
+            <div class="flex-container">
+                <div class="title-content">
+                    <h2>Our Industry Sectors</h2>
+                    <p class="line-height">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="flex-container">
+                <div class="grid-container pb-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-item">
+                                <img src="/IMG/computer.png" alt="">
+                                <div class="grid-info">
+                                    <div class="p-3">
+                                        <p class="text-white pb-1 category">Information Technology</p>
+                                        <div class="category-link-container">
+                                            <p class="category-link">See jobs in this sector</p>
+                                            <a href="#">
+                                                <img style="height: 10px;" src="/IMG/right-arrow.svg" alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-item">
+                                <img src="/IMG/mobilefilm.png" alt="">
+                                <div class="grid-info">
+                                    <div class="p-3">
+                                        <p class="text-white pb-1 category">Digital Media</p>
+                                        <div class="category-link-container">
+                                            <p class="category-link">See jobs in this sector</p>
+                                            <a href="#">
+                                                <img style="height: 10px;" src="/IMG/right-arrow.svg" alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-item">
+                                <img src="/IMG/circuitboard.png" alt="">
+                                <div class="grid-info">
+                                    <div class="p-3">
+                                        <p class="text-white pb-1 category">IT Security</p>
+                                        <div class="category-link-container">
+                                            <p class="category-link">See jobs in this sector</p>
+                                            <a href="#">
+                                                <img style="height: 10px;" src="/IMG/right-arrow.svg" alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-item">
+                                <img src="/IMG/italianexplaining.png" alt="">
+                                <div class="grid-info">
+                                    <div class="p-3">
+                                        <p class="text-white pb-1 category">Legal IT</p>
+                                        <div class="category-link-container">
+                                            <p class="category-link">See jobs in this sector</p>
+                                            <a href="#">
+                                                <img style="height: 10px;" src="/IMG/right-arrow.svg" alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row pt-5">
+                        <div class="col-12 col-lg-6">
+                            <div class="grid-item">
+                                <img src="/IMG/bikeman.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h2 class="pb-4">Public Sector</h2>
+                            <p>Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vestibulum ex ut sagittis scelerisque. Integer iaculis, mi at <span class="highlighted-link"><a href="#">feugiat tempus</a></span>, diam risus pellentesque tortor, nec pharetra est est non enim.
+                            </p>
+                            <ul>
+                                <li>
+                                    <div class="list-row pt-4">
+                                        <img class="pr-2" src="/IMG/right-arrow.svg" alt="">
+                                        <p>List element</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-row pt-3">
+                                        <img class="pr-2" src="/IMG/right-arrow.svg" alt="">
+                                        <p>List element</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-row pt-3">
+                                        <img class="pr-2" src="/IMG/right-arrow.svg" alt="">
+                                        <p>List element</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn-main mt-4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--LOGOS CAROUSEL-->
+    <section id="logos">
+
+            <h2 class="d-flex justify-content-center text-align-center text-white h1 pb-5">A few of our fantastic clients</h2>
+            <div class="logos-container logos-responsive">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+                <img class="p-2" src="/IMG/logos/blocklogo.png" alt="">
+            </div>
+        
+    </section>
+<!--LATEST JOBS-->
+    <section id="latest-jobs">
+        <div class="main-container">
+            <div class="pb-4 pb-5 mt-lg-5 mb-5 pt-lg-5 d-md-flex justify-content-between align-items-center">
+                <h2 class="text-white job-title">Latest Jobs</h2>
+                <button class="btn-main btn job-button">Read More</button>
+            </div>
+            <div class="jobs-responsive">
+                <div class="pr-4 pl-3">
+                    <div class="job-listing">
+                        <div class="listing-title">
+                            <p>Electrical Conductor Researcher</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-3" style="height: 25px" src="/IMG/map-marker-alt-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">Germany</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <p class="job-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus…</p>
+                        <div class="info">
+                            <a href="#">
+                                <p>View Job</p>
+                            </a>
+                            <img class="pl-4" src="/IMG/long-arrow-alt-right-solid.svg" alt="moneysign">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pr-4 pl-3">
+                    <div class="job-listing">
+                        <div class="listing-title">
+                            <p>Electrical Conductor Researcher</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-3" style="height: 25px" src="/IMG/map-marker-alt-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">Germany</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <p class="job-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus…</p>
+                        <div class="info">
+                            <a href="#">
+                                <p>View Job</p>
+                            </a>
+                            <img class="pl-4" src="/IMG/long-arrow-alt-right-solid.svg" alt="moneysign">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pr-4 pl-3">
+                    <div class="job-listing">
+                        <div class="listing-title">
+                            <p>Electrical Conductor Researcher</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-3" style="height: 25px" src="/IMG/map-marker-alt-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">Germany</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <p class="job-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus…</p>
+                        <div class="info">
+                            <a href="#">
+                                <p>View Job</p>
+                            </a>
+                            <img class="pl-4" src="/IMG/long-arrow-alt-right-solid.svg" alt="moneysign">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pr-4 pl-3">
+                    <div class="job-listing">
+                        <div class="listing-title">
+                            <p>Electrical Conductor Researcher</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-3" style="height: 25px" src="/IMG/map-marker-alt-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">Germany</p>
+                        </div>
+                        <div class="info">
+                            <img class="pr-2" src="/IMG/money-bill-solid.svg" alt="moneysign">
+                            <p class="font-weight-bold">£31,000 - £43,000</p>
+                        </div>
+                        <p class="job-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus…</p>
+                        <div class="info">
+                            <a href="#">
+                                <p>View Job</p>
+                            </a>
+                            <img class="pl-4" src="/IMG/long-arrow-alt-right-solid.svg" alt="moneysign">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex items-center justify-content-end">
+                <button class="prevJob"></button>
+                <button class="nextJob"></button>
+            </div>
+        </div>
+
+        
+    </section>
+<!--CAREERS LINK-->
+    <section id="careers">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h2 class="text-white job-title pb-4">Join the crowd and become
+                        part of an award winning team</h2>
+                    <p class="text-white pb-5">Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas </p>
+                    <button class="btn btn-white mb-5 careers-button"><a style="color: white; text-decoration: none;" href="#">Careers</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--LATEST NEWS-->
+<!--https://codepen.io/paulobrien/pen/MWKmNOE FOR THIS GRID - adjusted-->
+    <section id="latest-news">
+        <div class="main-container">
+            <div class="pb-4 d-md-flex justify-content-between align-items-center">
+                <h2 class="text-black mt-3 job-title">Latest News & Articles</h2>
+                <button class="btn-main btn job-button">All News</button>
+            </div>
+            <div class="columns pt-4">
+                <div class="box mb-4">
+                    <div class="grid-container">
+                        <img src="/IMG/spiralstairs.png" alt="">
+                        <div class="p-4">
+                            <h4 class="font-weight-bold pb-4">Gravida Veroeros</h4>
+                            <p class="pb-5 font-weight-light">Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mb-4">
+                    <div class="grid-container">
+                        <div class="p-4">
+                            <h4 class="font-weight-bold pb-4">Gravida Veroeros</h4>
+                            <p class="pb-5 font-weight-light">Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mb-4">
+                    <div class="grid-container">
+                        <div class="p-4">
+                            <h4 class="font-weight-bold pb-4">Gravida Veroeros</h4>
+                            <p class="pb-5 font-weight-light">Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mb-4">
+                    <div class="grid-container">
+                        <img src="/IMG/laptop.png" alt="">
+                        <div class="p-4">
+                            <h4 class="font-weight-bold pb-4">Gravida Veroeros</h4>
+                            <p class="pb-5 font-weight-light">Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mb-4">
+                    <div class="grid-container">
+                        <img src="/IMG/blueblazerman.png" alt="">
+                        <div class="p-4">
+                            <h4 class="font-weight-bold pb-4">Gravida Veroeros</h4>
+                            <p class="pb-5 font-weight-light">Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+                            <button class="btn btn-main">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="news-green-background mt-5 mb-5 p-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p class="text-center text-white font-weight-bold pb-2">Have a question? We want to hear from you! </p>
+                            <p class="text-white font-weight-light pb-4">Curabitur laoreet egestas!</p>
+                            <button class="btn btn-white">Get in touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="main-container">
+            <div class="row text-white justify-content-between">
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="flex flex-column">
+                        <h5 class="mb-4">Contact Us</h5>
+                        <div class="d-flex flex-wrap justify-content-between mt-3 mb-3">
+                            <p>Telephone</p>
+                            <p class="pr-5">+44 123 456 789</p>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between mt-3 mb-3">
+                            <p>Email</p>
+                            <p class="pr-5">enquiries@domain.com</p>
+                        </div>
+                        
+                        <h5 class="mt-4 mb-4">Connect with Us</h5>
+                        <div class="d-flex align-items-center">
+                            <a href="#">
+                                <img class="pr-4" src="/IMG/linkedin-icon.svg" alt="linkedinIcon">
+                            </a>
+                            <a href="#">
+                                <img class="pr-4" src="/IMG/twitter-icon.svg" alt="linkedinIcon">
+                            </a>
+                            <a href="#">
+                                <img class="pr-4" src="/IMG/insta-icon.svg" alt="linkedinIcon">
+                            </a>
+                            <a href="#">
+                                <img class="pr-4" src="/IMG/facebook-icon.svg" alt="linkedinIcon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="flex flex-column">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <a href="#">
+                            <p class="mb-3">Home</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">About us</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Clients</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Candidates</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Media Hub</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Job Search</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="flex flex-column">
+                        <h5 class="mb-4">Sectors</h5>
+                        <a href="#">
+                            <p class="mb-3">Information Technology</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Energy</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Banking</p>
+                        </a>
+                        <a href="#">
+                            <p class="mb-3">Life Sciences</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="flex flex-column">
+                        <h5 class="mb-4">Email Newsletter</h5>
+                        <p class="pb-4">Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In </p>
+                        <form action="">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Email Address">
+                                <button type="submit">
+                                    <img src="/IMG/mail-icon.svg" alt="mail-icon">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="copyright-container row">
+            <div class="col-12 col-md-2">
+                <p class="font-weight-light">Copyright Venn</p>
+            </div>
+            
+            <div class="col-12 col-md-8 row text-center align-items-center no-gutters">
+                <div class="col-12 col-md-4">
+                    <a class="" href="#">
+                        <p class="font-weight-light">Privacy Policy</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="#">
+                        <p class="font-weight-light">Slavery & Human Trafficking Statement </p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a class="" href="#">
+                        <p class="font-weight-light">Terms & Conditions</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 text-right">
+                <p class="font-weight-light">Site by Venn</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--SLICK SCRIPTS-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

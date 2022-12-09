@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* MAIN CONTAINER - BOOTSTRAP MAX CONTAINER WAS TOO SMALL */
+.main-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 10px;
+}
+@media (min-width: 768px) {
+  .main-container {
+    padding: 4rem;
+  }
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 10px;
+  z-index: 60;
+}
+@media (max-width: 991px) {
+  .nav-container {
+    background: rgba(0, 0, 0, 0.817);
+  }
+}
+@media (min-width: 768px) {
+  .nav-container {
+    padding: 1rem 4rem;
+  }
+}
+.nav-container .navbar-toggler-icon {
+  z-index: 30;
+}
+.nav-container .navbar a {
+  color: white;
+}
+.nav-container .navbar a:hover {
+  text-decoration: underline;
+}
+.nav-container .navbar-inner {
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* main buttons */
+.btn, .btn-white, .btn-main {
+  border-radius: 0;
+  padding: 1rem 5rem 1rem 5rem;
+  font-weight: bold;
+  font-size: 24px;
+}
+.btn-main {
+  color: #4DD3BE;
+  border: 3px solid #4DD3BE;
+  padding: 1rem 4rem 1rem 4rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn-white {
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  padding: 1rem 4rem 1rem 4rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-main:hover {
+  color: #35B19D;
+}
+
+.btn-white:hover {
+  color: #4DD3BE;
+}
+
+/* NAVBAR DESKTOP */
+.main-nav {
+  background: transparent;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 50;
+}
+.main-nav .nav-container {
+  max-width: 1540px;
+  margin: auto;
+}
+.main-nav .navLinks a {
+  color: white;
+  font-size: large;
+}
+.main-nav .searchIcon {
+  height: 1.5rem;
+  scale: 100%;
+  transition: all 1s ease;
+}
+.main-nav .searchIcon:hover {
+  scale: 120%;
+}
+.main-nav .mobile-menu {
+  width: 100%;
+}
+
+#hero {
+  min-height: 80vh;
+  width: 100%;
+  background: url("./IMG/jellyfishmain.png") no-repeat center center/cover;
+  color: #F7F7F7;
+  display: flex;
+}
+#hero .hero-title {
+  font-weight: 600;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  #hero .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+#hero .hero-info {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  #hero .hero-info {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #hero button {
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* Who are Venn / Stats */
+#stats {
+  background: url("./IMG/curve_background.png") no-repeat center center/cover;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding-bottom: 5rem;
+}
+@media (max-width: 768px) {
+  #stats {
+    padding-bottom: 8rem;
+  }
+}
+#stats .grid-1-title {
+  font-weight: 600;
+  color: white;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  #stats .grid-1-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+#stats .grid-1-info {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  #stats .grid-1-info {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  #stats .grid-1 button {
+    display: flex;
+    margin: auto;
+  }
+}
+#stats .stats-col {
+  display: grid;
+}
+#stats .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: bold;
+  color: white;
+  align-content: center;
+}
+#stats .grid-2 .stats {
+  display: grid;
+  grid-gap: 3rem;
+}
+#stats .grid-2 .stats .stats-grid {
+  display: grid;
+  justify-items: center;
+}
+
+/* INDUSTRY SECTORS GRID */
+#industry-sectors h2 {
+  font-weight: 600;
+  font-size: 44px;
+}
+#industry-sectors .grid-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+#industry-sectors .grid-item img {
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+#industry-sectors .grid-item img:hover {
+  transform: scale(105%);
+}
+#industry-sectors .grid-item .grid-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(39, 39, 39, 0.7019607843);
+}
+#industry-sectors .grid-item .grid-info .category {
+  font-size: 28px;
+}
+#industry-sectors .grid-item .grid-info .category-link-container {
+  display: flex;
+  align-items: center;
+}
+#industry-sectors .grid-item .grid-info .category-link {
+  font-size: 20px;
+  color: #35B19D;
+  padding-right: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+#industry-sectors .grid-item .grid-info .category-link:hover {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+#industry-sectors .highlighted-link {
+  font-weight: 800;
+  text-decoration: underline;
+  color: #4DD3BE;
+}
+#industry-sectors .highlighted-link a {
+  color: inherit;
+}
+#industry-sectors .list-row {
+  display: flex;
+}
+#industry-sectors .title-content {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#industry-sectors .title-content .line-height {
+  padding-top: 1rem;
+  line-height: 2rem;
+}
+
+/* LOGOS CAROUSEL */
+/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport (slick list in slick carousel). inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK- position absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
+
+https://kenwheeler.github.io/slick/#demos
+
+*/
+#logos {
+  margin-top: 4rem;
+  width: 100%;
+  background: url("./IMG/green-background.png") no-repeat center center/cover;
+  padding: 7rem 0;
+}
+#logos .logos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LATEST JOBS */
+#latest-jobs {
+  min-height: 100vh;
+  width: 100%;
+  background: url("./IMG/jellyfish.png") no-repeat center center/cover;
+  overflow: hidden;
+  /* This css element overrides the inline styles by slick carousel plugin */
+}
+#latest-jobs .job-title {
+  justify-self: flex-start;
+  font-size: 44px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  #latest-jobs .job-title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #latest-jobs .job-button {
+    display: flex;
+    margin: auto;
+  }
+}
+#latest-jobs .job-listing {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid 2px white;
+}
+#latest-jobs .job-listing .listing-title {
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
+  background-color: #35B19D;
+}
+#latest-jobs .job-listing .listing-title p {
+  max-width: 80%;
+}
+#latest-jobs .job-listing .info {
+  display: flex;
+  padding: 1rem;
+  color: #5F6368;
+}
+#latest-jobs .job-listing .info a {
+  color: #4DD3BE;
+}
+#latest-jobs .job-listing .job-info {
+  max-width: 400px;
+  padding: 1rem;
+  color: #5F6368;
+}
+#latest-jobs .jobs-responsive .slick-list {
+  overflow: visible !important;
+}
+#latest-jobs .slick-arrow {
+  margin-top: 20px;
+  color: blue;
+}
+#latest-jobs .slick-arrow.prevJob {
+  right: 50px;
+}
+#latest-jobs .nextJob {
+  background: url("./IMG/angle-right-solid.svg") no-repeat center center/contain;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  border: none;
+}
+#latest-jobs .prevJob {
+  background: url("./IMG/angle-right-solid.svg") no-repeat center center/contain;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-180deg);
+  outline: none;
+  border: none;
+}
+
+/* CAREERS SECTION */
+#careers {
+  height: auto;
+  width: 100%;
+  /* ARTEFACT ON TOP OF IMAGE WHEN SHRUNK IN DESKTOP? */
+  background: url("./IMG/desk.png") no-repeat center center/cover;
+}
+#careers .row {
+  display: flex;
+  padding-top: 5rem;
+}
+#careers .job-title {
+  font-size: 44px;
+  font-weight: 600;
+}
+#careers p {
+  font-size: 20px;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  #careers .careers-button {
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* LATEST NEWS GRID : https://codepen.io/paulobrien/pen/MWKmNOE*/
+#latest-news {
+  background-color: #F7F7F7;
+}
+#latest-news h2 {
+  font-weight: 600;
+  font-size: 44px;
+}
+#latest-news .columns {
+  margin: auto;
+  -moz-columns: 3 280px;
+       columns: 3 280px;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+#latest-news .columns .box {
+  margin: 0 0 1rem;
+  display: inline-block; /* stops block being split across columns */
+  width: 100%;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+#latest-news .grid-container {
+  background: white;
+  overflow: hidden;
+}
+#latest-news img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#latest-news img:hover {
+  transform: scale(102%);
+}
+#latest-news .news-green-background {
+  background: url("./IMG/greenbackground2.png") no-repeat center center/cover;
+}
+@media (max-width: 768px) {
+  #latest-news .job-title {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #latest-news .job-button {
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* FOOTER */
+#footer {
+  background-color: #35B19D;
+}
+#footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.571);
+}
+#footer p {
+  color: rgba(255, 255, 255, 0.571);
+}
+#footer input {
+  padding: 1rem;
+  background-color: #35B19D;
+  border: 2px solid white;
+  color: white;
+}
+#footer ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-weight: 600;
+  opacity: 1; /* Firefox */
+}
+#footer :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-weight: 600;
+  opacity: 1; /* Firefox */
+}
+#footer ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-weight: 600;
+  opacity: 1; /* Firefox */
+}
+#footer button {
+  border: none;
+}
+
+/* COPYRIGHT */
+.copyright {
+  background-color: #272727;
+  width: 100%;
+}
+.copyright .copyright-container {
+  color: rgba(255, 255, 255, 0.537);
+  font-size: small;
+  max-width: 1600px;
+  padding: 20px 10px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .copyright .copyright-container {
+    padding: 1.5rem 4rem;
+  }
+}
+.copyright a {
+  color: rgba(255, 255, 255, 0.537);
+}
+@media (max-width: 768px) {
+  .copyright a {
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .copyright p {
+    padding: 10px;
+    display: flex;
+    margin: auto;
+  }
+}/*# sourceMappingURL=index.css.map */
