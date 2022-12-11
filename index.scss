@@ -268,6 +268,9 @@ https://kenwheeler.github.io/slick/#demos
         flex-direction: column;
         background-color: white;
         border: solid 2px white;
+        @media (max-width: 768px) { 
+            max-width: 80%;
+        }
         
         .listing-title {
             color: white;
@@ -331,7 +334,6 @@ https://kenwheeler.github.io/slick/#demos
 #careers {
     height: auto;
     width: 100%;
-    /* ARTEFACT ON TOP OF IMAGE WHEN SHRUNK IN DESKTOP? */
     background: url('./IMG/desk.png') no-repeat center center/cover;
 
     .row {

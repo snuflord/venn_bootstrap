@@ -82,6 +82,9 @@ li {
         padding: 1rem 4rem 1rem 4rem;
         font-weight: bold;
         font-size: 20px;
+        @media (max-width: 768px) { 
+            padding: 1rem 2rem;
+        }
     }
     &-white {
         @extend .btn;
@@ -90,6 +93,9 @@ li {
         padding: 1rem 4rem 1rem 4rem;
         font-weight: bold;
         font-size: 20px;
+        @media (max-width: 768px) { 
+            padding: 1rem 2rem;
+        }
     }
 }
 

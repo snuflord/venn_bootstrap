@@ -82,12 +82,22 @@ li {
   font-weight: bold;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .btn-main {
+    padding: 1rem 2rem;
+  }
+}
 .btn-white {
   color: #FFFFFF;
   border: 3px solid #FFFFFF;
   padding: 1rem 4rem 1rem 4rem;
   font-weight: bold;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .btn-white {
+    padding: 1rem 2rem;
+  }
 }
 
 .btn-main:hover {
@@ -348,6 +358,11 @@ https://kenwheeler.github.io/slick/#demos
   background-color: white;
   border: solid 2px white;
 }
+@media (max-width: 768px) {
+  #latest-jobs .job-listing {
+    max-width: 80%;
+  }
+}
 #latest-jobs .job-listing .listing-title {
   color: white;
   font-size: 20px;
@@ -400,7 +415,6 @@ https://kenwheeler.github.io/slick/#demos
 #careers {
   height: auto;
   width: 100%;
-  /* ARTEFACT ON TOP OF IMAGE WHEN SHRUNK IN DESKTOP? */
   background: url("./IMG/desk.png") no-repeat center center/cover;
 }
 #careers .row {
