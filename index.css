@@ -75,6 +75,7 @@ li {
 .nav-scrolled {
   background: rgba(0, 0, 0, 0.817);
   transition: background-color 200ms linear;
+  border-radius: 30px;
 }
 
 .flex-container {
