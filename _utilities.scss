@@ -29,6 +29,15 @@ li {
     }
 }
 
+/* FIXING NAVBAR TO TOP */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 70;
+}
+
 .nav-container {
     position: absolute;
     top: 0;
@@ -45,8 +54,8 @@ li {
 
     @media (min-width: 768px) { 
         padding: 1rem 4rem;
-        
     }
+
     .navbar-toggler-icon {
         z-index: 30;
     }
@@ -60,6 +69,11 @@ li {
         position: relative;
         
     }
+}
+
+.nav-scrolled {
+    background: rgba(0, 0, 0, 0.817);
+    transition: background-color 200ms linear;
 }
 
 .flex-container {

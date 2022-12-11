@@ -27,4 +27,12 @@ $(document).ready(function(){
       });
 })
 
+const navbar = document.querySelector('.navbar-scroll');
+window.onscroll = () => {
+    if (window.scrollY >= 300) {
+        navbar.classList.add('nav-scrolled');
+    } else {
+        navbar.classList.remove('nav-scrolled');
+    }
+};
 

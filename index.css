@@ -29,6 +29,15 @@ li {
   }
 }
 
+/* FIXING NAVBAR TO TOP */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+}
+
 .nav-container {
   position: absolute;
   top: 0;
@@ -61,6 +70,11 @@ li {
 }
 .nav-container .navbar-inner {
   position: relative;
+}
+
+.nav-scrolled {
+  background: rgba(0, 0, 0, 0.817);
+  transition: background-color 200ms linear;
 }
 
 .flex-container {
@@ -360,7 +374,7 @@ https://kenwheeler.github.io/slick/#demos
 }
 @media (max-width: 768px) {
   #latest-jobs .job-listing {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 #latest-jobs .job-listing .listing-title {
