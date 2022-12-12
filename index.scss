@@ -10,7 +10,6 @@
     right: 0px;
     left: 0px;
     z-index: 50;
-    
     .nav-container {
         max-width: 1540px;
         margin: auto;
@@ -27,7 +26,6 @@
     .searchIcon:hover {
         scale: 120%;
     }
-
     .mobile-menu {
         width: 100%;
     }
@@ -39,7 +37,6 @@
     background: url('./IMG/jellyfishmain.png') no-repeat center center/cover;
     color: $background-offwhite;
     display: flex;
-    
     .hero-title {
         font-weight: 600;
         font-size: 3rem;
@@ -57,7 +54,6 @@
             font-size: 1.5rem;
         }
     }
-
     button {
         @media (max-width: 768px) { 
             display: flex;
@@ -79,12 +75,10 @@
     @media (max-width: 768px) { 
         padding-bottom: 8rem;
     }
-
     .grid-1-title {
         font-weight: 600;
         color: white;
         font-size: 3rem;
-
         @media (max-width: 768px) { 
             font-size: 2rem;
             text-align: center;
@@ -101,14 +95,12 @@
             padding-right: 0;
         }
     }
-
     .grid-1 button {
         @media (max-width: 768px) { 
             display: flex;
             margin: auto;
         }
     }
-
     .stats-col {
         display: grid;
     }
@@ -118,7 +110,6 @@
         font-weight: bold;
         color: white;
         align-content: center;
-
         .stats {
             display: grid;
             grid-gap: 3rem;
@@ -139,17 +130,14 @@
         font-weight: 600;
         font-size: 44px;
     }
-
     .grid-item {
         position: relative;
         overflow: hidden;
         margin-bottom: 2rem;
-
         img {
             width: 100%;
             transition: all 1s ease-in-out;
         }
-
         img:hover {
             transform: scale(105%);
         }
@@ -160,7 +148,6 @@
             left: 0px;
             width: 100%;
             background-color: $background-dark;
-
             .category {
                 font-size: 28px;
             }
@@ -200,7 +187,6 @@
         @media (max-width: 768px) { 
             max-width: 100%;
         }
-        
         .line-height {
             padding-top: 1rem;
             line-height: 2rem;
@@ -210,7 +196,7 @@
 
 /* LOGOS CAROUSEL */
 
-/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport (slick list in slick carousel). inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK- position absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
+/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport ('slick list' in slick carousel). Inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK positioned absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
 
 https://kenwheeler.github.io/slick/#demos
 
@@ -228,7 +214,6 @@ https://kenwheeler.github.io/slick/#demos
         justify-content: center;
         align-items: center;
     }
-
     h2 {
         @media (max-width: 768px) { 
             text-align: center;
@@ -248,21 +233,18 @@ https://kenwheeler.github.io/slick/#demos
         justify-self: flex-start;
         font-size: 44px;
         font-weight: 600;
-
         @media (max-width: 768px) { 
             padding-top: 3rem;
             padding-bottom: 1rem;
             text-align: center;
         }
     }
-
     .job-button {
         @media (max-width: 768px) { 
             display: flex;
             margin: auto;
         }
     }
-
     .job-listing {
         display: flex;
         flex-direction: column;
@@ -271,18 +253,15 @@ https://kenwheeler.github.io/slick/#demos
         @media (max-width: 768px) { 
             max-width: 90%;
         }
-        
         .listing-title {
             color: white;
             font-size: 20px;
             padding: 1rem;
             background-color: $background-green;
         }
-
         .listing-title p {
             max-width: 80%;
         }
-
         .info {
             display: flex;
             padding: 1rem;
@@ -301,16 +280,13 @@ https://kenwheeler.github.io/slick/#demos
         .jobs-responsive .slick-list {
             overflow: visible !important;
         }
-
         .slick-arrow {
             margin-top: 20px;
             color: blue;
         }
-
         .slick-arrow.prevJob {
             right: 50px;
         }
-
         .nextJob {
             background: url('./IMG/angle-right-solid.svg') no-repeat center center/contain;
             height: 30px;
@@ -318,7 +294,6 @@ https://kenwheeler.github.io/slick/#demos
             outline: none;
             border: none;
         }
-
         .prevJob {
             background: url('./IMG/angle-right-solid.svg') no-repeat center center/contain;
             height: 30px;
@@ -366,12 +341,10 @@ https://kenwheeler.github.io/slick/#demos
         font-weight: 600;
         font-size: 44px;
     }
-
     .columns {
         margin: auto;
         columns: 3 280px;
         column-gap: 2rem;
-
         .box {
             margin: 0 0 1rem;
             display: inline-block; /* stops block being split across columns */
@@ -379,32 +352,26 @@ https://kenwheeler.github.io/slick/#demos
             break-inside: avoid;
           }
       }
-
     .grid-container {
         background: white;
         overflow: hidden;
     }
-
     img {
         width: 100%;
         transition: all 0.3s ease-in-out;
     }
-
     img:hover {
         transform: scale(102%);
     }
-
     .news-green-background {
         background: url('./IMG/greenbackground2.png') no-repeat center center/cover;
     }
-
     .job-title {
         @media (max-width: 768px) { 
             text-align: center;
             font-size: 30px;
         }
     }
-
     .job-button {
         @media (max-width: 768px) { 
             display: flex;
@@ -461,14 +428,12 @@ https://kenwheeler.github.io/slick/#demos
             padding: 1.5rem 4rem;
         }
     }
-
     a {
         color: rgba(255, 255, 255, 0.537);
         @media (max-width: 768px) {
             padding: 0px;
         }
     }
-
     p {
         @media (max-width: 768px) {
             padding: 10px; 

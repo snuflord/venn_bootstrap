@@ -326,7 +326,7 @@ li {
 }
 
 /* LOGOS CAROUSEL */
-/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport (slick list in slick carousel). inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK- position absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
+/* NOTES ON CAROUSEL USAGE: carousels have a parent div - the viewport ('slick list' in slick carousel). Inside the viewport we may have multiple items (the carousel items). The viewport has overflow hidden, so that overflowing carousel items fall off the edge. Inside the viewport there is a TRACK positioned absolute to the relative viewport container. The javascript plugin (slick carousel) calculates/floats all carousel items left. The javascript calculates the total width of all items inside the track - dictating the width of the track.
 
 https://kenwheeler.github.io/slick/#demos
 

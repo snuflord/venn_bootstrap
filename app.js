@@ -1,4 +1,4 @@
-
+// SLICK CAROUSEL 
 $(document).ready(function(){
     $('.logos-responsive').slick({
         dots: false,
@@ -27,6 +27,7 @@ $(document).ready(function(){
       });
 })
 
+// NAVBAR BACKGROUND
 const navbar = document.querySelector('.navbar-scroll');
 window.onscroll = () => {
     if (window.scrollY >= 300) {
